@@ -1,0 +1,40 @@
+<nav role="navigation" id="header" class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <a href="/" class="navbar-backtobrand hidden-xs">
+      <span class="glyphicon glyphicon-arrow-left"></span>
+    </a>
+    <div class="navbar-header">
+      <button type="button"
+        data-toggle="collapse"
+        data-target=".navbar-headernav-collapse"
+        class="navbar-toggle">
+          <span class="sr-only">Toggle section navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/keystone" class="navbar-brand">Keystone Demo</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-headernav-collapse">
+      <ul class="nav navbar-nav">
+        <!-- NAV ITEMS -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="divider"></li>
+        <li><a href="/keystone/signout" class="signout">Sign Out</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Here is where the lists will be rendered -->
+{{outlet}}
+
+<div id="footer">
+  <div class="container">
+    <p>
+      Powered by
+      <a href="http://keystonejs.com" target="_blank">KeystoneJS</a> {{version}}
+    </p>
+  </div>
+</div>
